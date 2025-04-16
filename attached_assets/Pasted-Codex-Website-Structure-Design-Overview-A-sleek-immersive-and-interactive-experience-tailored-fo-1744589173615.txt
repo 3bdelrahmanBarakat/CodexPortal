@@ -1,0 +1,136 @@
+Codex Website Structure & Design Overview
+A sleek, immersive, and interactive experience tailored for a software house at the forefront of digital solutions.
+
+1. Homepage – “Code the Future”
+Sections:
+Hero Section
+
+Full-screen gradient (#2f2fea ➜ #000000) with smooth pointer-based parallax animation.
+
+Animated floating code snippets and glowing particles.
+
+Tagline: “Innovating the Digital Future, One Line at a Time.”
+
+CTA Buttons: “Explore Our Work” | “Let’s Build Together”
+
+Who We Are
+
+Minimalist two-column layout: a quick intro on the left, animated company illustration on the right.
+
+Subtle entrance animations on scroll.
+
+Featured Projects
+
+Interactive carousel of 2–3 selected projects.
+
+Hover animations: reveal tech used + short description.
+
+Option to "See Full Portfolio"
+
+Client Testimonials
+
+Clean card slider with animated star ratings, client names, and company logos.
+
+Soft animated quotes with fading transitions.
+
+Scroll Animation
+
+Floating "Code Dots" react to pointer movement as you scroll down the page.
+
+2. About Us – “The Codex Journey”
+Sections:
+Our Story
+
+Timeline layout with micro-interactions on hover (icons animate, lines glow).
+
+Background image transitions in sync with the timeline scroll.
+
+Meet the Team
+
+Grid layout with bios on hover or click (card flips).
+
+Fun animations: floating avatars and moving cursor trails.
+
+Our Values
+
+Animated hexagon or triangle pattern with each corner representing a core value.
+
+Hover: expand with a smooth pop effect and short descriptions.
+
+By the Numbers
+
+Animated counters (e.g., Projects Completed, Techs Mastered, Hours Saved).
+
+Icons pulse slightly to attract attention.
+
+3. Services – “Solutions Engineered to Scale”
+Sections:
+What We Do
+
+Cards with hover-morph effect for:
+
+Web Development
+
+Mobile App Development
+
+AI & Automation
+
+UX/UI Design
+
+Software Consulting
+
+Our Process
+
+Horizontal scroll or step-by-step animation.
+
+Phases: Discover → Design → Develop → Deploy → Optimize
+
+Tech Stack
+
+Icon grid of technologies (React, Flutter, Node.js, MongoDB, etc.).
+
+Pointer interaction: icons light up on hover and display brief tooltip.
+
+4. Portfolio – “Proof of Concept”
+Sections:
+Case Studies (3–6 Projects)
+
+Each card includes:
+
+Visual Mockups (scroll animation reveal)
+
+The Challenge
+
+Our Solution
+
+The Result (metrics/stats)
+
+Filters
+
+Interactive filters by project type or tech stack.
+
+Mini Demos
+
+Optional “Try It” iframe for live preview or screen walkthroughs.
+
+5. Contact – “Let’s Build Something Great”
+Sections:
+Contact Form
+
+Styled input fields with floating labels.
+
+Subtle animation on submit (e.g., paper plane icon animation).
+
+Contact Details
+
+Animated icons for phone, email, and address.
+
+Black + #2f2fea accents.
+
+Social Links
+
+Icons animate on hover (glow or wiggle).
+
+Map Integration (Optional)
+
+Dark-themed map with neon purple highlights.

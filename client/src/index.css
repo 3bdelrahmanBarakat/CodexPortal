@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient-primary: #2f2fea;
+    --gradient-secondary: #000000;
+    --accent: #ff2fc2;
+    --secondary: #9290ff;
+    --dark-blue: #1a1a3a;
+    --darkest: #0a0a0a;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-black text-white overflow-x-hidden font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-b from-primary to-black;
+  }
+
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--secondary), var(--accent));
+  }
+
+  .glow {
+    @apply shadow-[0_0_15px_2px_rgba(47,47,234,0.4)];
+  }
+
+  .glow-accent {
+    @apply shadow-[0_0_15px_2px_rgba(255,47,194,0.4)];
+  }
+
+  .glow-text {
+    @apply [text-shadow:0_0_10px_rgba(146,144,255,0.7)];
+  }
+  
+  .floating-snippets pre {
+    text-shadow: 0 0 5px rgba(146, 144, 255, 0.5);
+    background-color: rgba(10, 10, 10, 0.3);
+    backdrop-filter: blur(2px);
+    padding: 8px;
+    border-radius: 4px;
+    border-left: 2px solid var(--secondary);
+  }
+}
+
+@layer utilities {
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .secondary-color {
+    color: var(--secondary);
+  }
+
+  .accent-color {
+    color: var(--accent);
+  }
+
+  .dark-blue {
+    background-color: var(--dark-blue);
+  }
+
+  .darkest {
+    background-color: var(--darkest);
+  }
+
+  .bg-accent {
+    background-color: var(--accent);
+  }
+
+  .bg-secondary-color {
+    background-color: var(--secondary);
+  }
+
+  .border-primary-20 {
+    border-color: rgba(47, 47, 234, 0.2);
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
