@@ -20,11 +20,13 @@ const WhoWeAre = () => {
             </h2>
             
             <p className="text-gray-300 mb-6 leading-relaxed">
-              At Codex, we're more than developers – we're digital architects designing the future of technology solutions. Founded on the principle that great software begins with understanding people, we merge technical excellence with human-centered design.
+              Codex started as a shared dream between five passionate friends with diverse backgrounds but one common goal—to build innovative tech solutions that make a real difference. Today, we are a growing software development agency driven by creativity, technology, and impact.
             </p>
             
             <p className="text-gray-300 mb-8 leading-relaxed">
-              Our team of passionate technologists thrives on solving complex challenges with elegant simplicity, creating digital experiences that empower businesses and delight users.
+            From custom software to mobile apps and web platforms, we turn ideas into powerful digital experiences. One of our proudest achievements is Ta3leemy, an all-in-one online learning platform designed to make education more accessible and engaging for everyone.
+
+At Codex, we’re not just writing code—we’re building the future of digital transformation in the Middle East.
             </p>
             
             <Link 

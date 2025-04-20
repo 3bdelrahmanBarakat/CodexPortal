@@ -157,12 +157,10 @@ export const processSteps: ProcessStep[] = [
 
 export const techStack: TechIcon[] = [
   { id: 1, name: "React", icon: "react" },
-  { id: 2, name: "Node.js", icon: "node-js" },
-  { id: 3, name: "Python", icon: "python" },
+  { id: 2, name: "Laravel", icon: "laravel" },
+  { id: 3, name: "Flutter", icon: "flutter" },
   { id: 4, name: "AWS", icon: "aws" },
-  { id: 5, name: "Angular", icon: "angular" },
   { id: 6, name: "Vue.js", icon: "vuejs" },
-  { id: 7, name: "Swift", icon: "swift" },
   { id: 8, name: "Android", icon: "android" },
 ];
 
@@ -220,33 +218,33 @@ export const teamMembers: TeamMember[] = [
 export const timelineItems: TimelineItem[] = [
   {
     id: 1,
-    year: "2015",
-    title: "Humble Beginnings",
-    description: "Codex started as a two-person operation in a small apartment, focused on creating custom web solutions for local businesses.",
+    year: "2022",
+    title: "A Shared Vision",
+    description: "Five friends, each with a different dream, came together with one mission: to create something meaningful in the world of technology.",
   },
   {
     id: 2,
-    year: "2017",
-    title: "First Major Client",
-    description: "Landed our first enterprise client and expanded the team to 10 talented developers and designers.",
+    year: "2023",
+    title: "From Passion to Code",
+    description: "With a shared passion for innovation, we transformed our ideas into real tech solutions, learning, growing, and building along the way.",
   },
   {
     id: 3,
-    year: "2019",
-    title: "International Expansion",
-    description: "Opened our second office and began serving clients across North America, Europe, and Asia.",
+    year: "2024",
+    title: "Codex is Born",
+    description: "Codex officially launched as a software development agency, combining creativity and cutting-edge tech to serve businesses across industries.",
   },
   {
     id: 4,
-    year: "2021",
-    title: "AI Division Launch",
-    description: "Established our specialized AI and automation division to help clients harness the power of machine learning.",
+    year: "2024",
+    title: "Our First Product: Ta3leemi",
+    description: "We developed Ta3leemi, an online learning platform built to make education more accessible, organized, and interactive for students and institutions.",
   },
   {
     id: 5,
-    year: "2023",
-    title: "Today",
-    description: "Now a team of 50+ experts, we continue to push the boundaries of what's possible in digital solutions.",
+    year: "2025",
+    title: "Vision: #1 in the Middle East",
+    description: "Our journey continues. We’re on a mission to become the leading tech company in the region—one innovation at a time.",
   },
 ];
 
@@ -299,9 +297,9 @@ export const stats: Stat[] = [
 ];
 
 export const contactInfo: ContactInfo = {
-  email: "hello@codex-tech.com",
-  phone: "+1 (555) 123-4567",
-  address: "123 Innovation Drive, Tech City, TC 10101",
+  email: "Codexegy@gmail.com",
+  phone: "+201032398267",
+  address: "Cairo, Egypt",
   socialLinks: {
     linkedin: "#",
     twitter: "#",

@@ -185,7 +185,7 @@ const ContactSection = () => {
                       <FormControl>
                         <Input
                           {...field}
-                          className="px-4 py-3 bg-darkest border border-primary/30 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary/50 text-white"
+                          className="px-4 py-3 bg-gray-900 text-white border border-primary/30 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary/50"
                           placeholder="John Doe"
                         />
                       </FormControl>
@@ -204,7 +204,7 @@ const ContactSection = () => {
                         <Input
                           {...field}
                           type="email"
-                          className="px-4 py-3 bg-darkest border border-primary/30 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary/50 text-white"
+                          className="px-4 py-3 bg-gray-900 text-white border border-primary/30 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary/50"
                           placeholder="john@example.com"
                         />
                       </FormControl>
@@ -225,13 +225,13 @@ const ContactSection = () => {
                             <SelectValue placeholder="Select your project type" />
                           </SelectTrigger>
                         </FormControl>
-                        <SelectContent className="bg-darkest border border-primary/30">
-                          <SelectItem className="bg-darkest hover:bg-primary/20 text-white" value="web">Web Development</SelectItem>
-                          <SelectItem className="bg-darkest hover:bg-primary/20 text-white" value="mobile">Mobile App</SelectItem>
-                          <SelectItem className="bg-darkest hover:bg-primary/20 text-white" value="ai">AI & Automation</SelectItem>
-                          <SelectItem className="bg-darkest hover:bg-primary/20 text-white" value="design">UX/UI Design</SelectItem>
-                          <SelectItem className="bg-darkest hover:bg-primary/20 text-white" value="consulting">Software Consulting</SelectItem>
-                          <SelectItem className="bg-darkest hover:bg-primary/20 text-white" value="other">Other</SelectItem>
+                        <SelectContent className="bg-gray-900 border border-primary/30 text-white">
+                          <SelectItem value="web" className="bg-gray-900 hover:bg-primary/20 text-white">Web Development</SelectItem>
+                          <SelectItem value="mobile" className="bg-gray-900 hover:bg-primary/20 text-white">Mobile App</SelectItem>
+                          <SelectItem value="ai" className="bg-gray-900 hover:bg-primary/20 text-white">AI & Automation</SelectItem>
+                          <SelectItem value="design" className="bg-gray-900 hover:bg-primary/20 text-white">UX/UI Design</SelectItem>
+                          <SelectItem value="consulting" className="bg-gray-900 hover:bg-primary/20 text-white">Software Consulting</SelectItem>
+                          <SelectItem value="other" className="bg-gray-900 hover:bg-primary/20 text-white">Other</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -249,7 +249,7 @@ const ContactSection = () => {
                         <Textarea
                           {...field}
                           rows={5}
-                          className="px-4 py-3 bg-darkest border border-primary/30 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary/50 text-white resize-none"
+                          className="px-4 py-3 bg-gray-900 text-white border border-primary/30 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary/50 resize-none"
                           placeholder="Tell us about your project..."
                         />
                       </FormControl>

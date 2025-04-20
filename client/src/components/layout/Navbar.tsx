@@ -17,6 +17,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [location] = useLocation();
 
+  // Handle scroll for header transparency
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -27,54 +28,59 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-opacity-80 backdrop-blur-md bg-darkest py-2" : "bg-transparent py-4"
-      }`}
-    >
-      <nav className="container mx-auto px-6 flex justify-between items-center">
-        <Link href="/" className="flex items-center">
-          <img src={codexLogo} alt="Codex" className="h-10" />
-        </Link>
-        
-        <div className="hidden md:flex space-x-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`transition-colors duration-300 ${
-                location === link.href
-                  ? "secondary-color"
-                  : "text-white hover:secondary-color"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-        
-        <button
-          className="md:hidden text-white focus:outline-none"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </button>
-      </nav>
+    <>
+      <header
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+          isScrolled && !isMobileMenuOpen
+            ? "bg-opacity-80 backdrop-blur-md bg-darkest py-2"
+            : "bg-transparent py-4"
+        }`}
+      >
+        <nav className="container mx-auto px-6 flex justify-between items-center">
+          <Link href="/" className="flex items-center">
+            <img src={codexLogo} alt="Codex" className="h-10" />
+          </Link>
+
+          <div className="hidden md:flex space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`transition-colors duration-300 ${
+                  location === link.href
+                    ? "secondary-color"
+                    : "text-white hover:secondary-color"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          <button
+            className="md:hidden text-white focus:outline-none z-[101]" // Higher z-index for clickability
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
+        </nav>
+      </header>
 
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-darkest/90 backdrop-blur-lg border-t border-primary-20 fixed top-[60px] left-0 w-full z-50"
+            className="md:hidden fixed top-[60px] left-0 right-0 bg-darkest/100 backdrop-blur-lg z-[100] min-h-[calc(100vh-60px)] isolate"
+            style={{ WebkitBackdropFilter: "blur(10px)" }} // Safari fallback
           >
-            <div className="container mx-auto px-6 py-6 flex flex-col items-center justify-center space-y-6">
+            <div className="container mx-auto px-6 py-6 flex flex-col items-center justify-center min-h-[calc(100vh-60px)]">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -93,7 +99,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 };
 
