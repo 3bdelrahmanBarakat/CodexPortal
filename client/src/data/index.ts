@@ -101,11 +101,12 @@ export const services: Service[] = [
   },
   {
     id: 3,
-    title: "AI & Automation",
-    description: "Harnessing artificial intelligence and machine learning to optimize processes, enhance decision-making, and create smarter systems.",
-    icon: "brain",
-    features: ["Predictive Analytics", "Chatbots & Virtual Assistants", "Process Automation"],
+    title: "SEO Optimization",
+    description: "Enhancing your online presence through strategic SEO practices that improve visibility, drive traffic, and increase conversions.",
+    icon: "search",
+    features: ["Keyword Research", "On-Page SEO", "Content Strategy"],
   },
+    
   {
     id: 4,
     title: "UX/UI Design",
@@ -167,10 +168,10 @@ export const techStack: TechIcon[] = [
 export const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Alex Johnson",
-    position: "CEO & Founder",
+    name: "Abdelrahman Barakat",
+    position: "Backend Developer",
     bio: "Alex built Codex from the ground up with a vision to create technology that empowers people. With over 15 years in the industry, he brings strategic insight and technical expertise to every project.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80",
+    image: "https://i.ibb.co/DDJ34RCR/Snapinst-app-468989894-549240554697602-9214018573755546646-n-1080.jpg",
     socialLinks: {
       linkedin: "#",
       twitter: "#",
@@ -179,10 +180,10 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: 2,
-    name: "Sarah Chen",
-    position: "CTO",
+    name: "Mohamed Nasser",
+    position: "Mobile App Developer",
     bio: "Sarah leads our technical strategy and ensures we're always at the cutting edge. Her background in AI and distributed systems helps us create solutions that are as elegant as they are powerful.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80",
+    image: "https://scontent.fcai20-5.fna.fbcdn.net/v/t39.30808-6/481274764_1227087272352868_2434984631338816663_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHMOhd9eQt9_pUS4b6KLpN-Ioi3lcgGQXYiiLeVyAZBdhlsEY3ytNQX2tPI6crE1xi1Y4RbZX2RjG_piH5t91cp&_nc_ohc=NqWpgKdmcCQQ7kNvwGqUkJS&_nc_oc=AdmQFBprIPFART-IR6Sa5715TkXNWJ9gmyPkbeCINt0rRqaacLsZamTi7CMn3xizr_M&_nc_zt=23&_nc_ht=scontent.fcai20-5.fna&_nc_gid=KLl5fug02aBRpuIlflSYew&oh=00_AfG3SidJvE9RK6MOWEHp0cHlCMrcdgzdIokucza8ePB72Q&oe=680CBAB5",
     socialLinks: {
       linkedin: "#",
       twitter: "#",
@@ -191,10 +192,10 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: 3,
-    name: "Michael Park",
-    position: "Lead UX Designer",
+    name: "Mohamed Atef",
+    position: "FullStack Developer",
     bio: "Michael believes great design is invisible. He obsesses over the details so our users don't have to, creating intuitive interfaces that make complex tasks feel simple and natural.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80",
+    image: "https://scontent.fcai20-1.fna.fbcdn.net/v/t39.30808-6/474587231_1359669362061961_2100668483350874104_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHmj9mpsCGSvF9SqVDCYD2DX6Iu4Z0EsBRfoi7hnQSwFDqlstqW6g0gKNY0wy6rP_Wyfnvw_ynRtGcUpVNlHsAP&_nc_ohc=u3w2rGSxZjYQ7kNvwFzjFWn&_nc_oc=AdmcNaGPyQe11uFgrbV1KaNgw6nluiAeZVuxVCqI-MuPcnVqTCKCChkntFxWuIOciEE&_nc_zt=23&_nc_ht=scontent.fcai20-1.fna&_nc_gid=eL6AKdmtkh4lHIkYC3fkow&oh=00_AfE6aQvH-rXt8TXWgHEcA-kqXO2wrulPJ-MNNeTWdUkW1g&oe=680CA857",
     socialLinks: {
       linkedin: "#",
       twitter: "#",
@@ -203,16 +204,29 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: 4,
-    name: "Emily Rodriguez",
-    position: "Senior Developer",
+    name: "Mohamed Hassanein",
+    position: "Marketing Specialist",
     bio: "Emily is our code quality champion and technical mentor. With expertise in multiple frameworks and languages, she ensures our solutions are as robust and maintainable as they are innovative.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80",
+    image: "https://i.ibb.co/Q3TdN91d/12106-B74-27-A3-4921-A1-F6-40-FF683010-AF.jpg",
     socialLinks: {
       linkedin: "#",
       twitter: "#",
       github: "#",
     },
   },
+
+  {
+    id: 5,
+    name: "Mahmoud Amin",
+    position: "Mobile App Developer",
+    bio: "Emily is our code quality champion and technical mentor. With expertise in multiple frameworks and languages, she ensures our solutions are as robust and maintainable as they are innovative.",
+    image: "https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/473417317_122151840920342361_8294178731824840291_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEappkCwOFaAtlIzw5qVf6UC2IgL1hnlqcLYiAvWGeWp6Wiqs4jSE_wX1LxFT9oy_i2WFB2TpaulcDWh9ACzMST&_nc_ohc=I21Jwa-pKMYQ7kNvwEFQGMH&_nc_oc=Adnh7Gzj3y_6p6ljlsm6DuMGksVriOuel5Rpb6sVSDINMdYZJSNHM137kHS18ieN5lE&_nc_zt=23&_nc_ht=scontent.fcai20-3.fna&_nc_gid=zf_CLNv21lE_-Hdu3wCeaw&oh=00_AfHgj8t6AuPDYiriPft0jFWGObNDjsw7qsANcaQbMTMnbw&oe=680C8729",
+    socialLinks: {
+      linkedin: "#",
+      twitter: "#",
+      github: "#",
+    },
+  }
 ];
 
 export const timelineItems: TimelineItem[] = [

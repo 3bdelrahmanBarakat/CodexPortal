@@ -101,7 +101,7 @@ const About = () => {
             Meet the Team
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {teamMembers.map((member) => (
               <motion.div
                 key={member.id}
@@ -128,7 +128,7 @@ const About = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="text-xl font-bold font-montserrat">{member.name}</h3>
+                    <h4 className="text-l font-bold font-montserrat">{member.name}</h4>
                     <p className="text-secondary-color text-sm">{member.position}</p>
                   </div>
 

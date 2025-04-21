@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { RectangleEllipsis, Phone, MapPin, ArrowRight, Linkedin, Twitter, Github, Dribbble } from "lucide-react";
+import { RectangleEllipsis, Phone, MapPin, ArrowRight, Instagram, Facebook } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { SiTiktok } from "react-icons/si";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -27,6 +29,8 @@ type FormValues = z.infer<typeof formSchema>;
 const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  console.log("contactInfo.socialLinks:", contactInfo.socialLinks); // Debug social links
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -68,7 +72,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-black relative overflow-hidden">
+    <section id="contact" className="py-20 bg-black relative">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <motion.div
@@ -136,31 +140,40 @@ const ContactSection = () => {
             
             <motion.div
               variants={fadeIn("up", 0.6)}
-              className="flex space-x-4"
+              className="flex space-x-4 relative z-50 pointer-events-auto isolate"
+              style={{ pointerEvents: "auto", isolation: "isolate" }}
             >
               <a
-                href={contactInfo.socialLinks.linkedin}
-                className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center secondary-color hover:bg-primary/30 hover:accent-color transition-all duration-300"
+                href="https://www.instagram.com/codexsolutions_?igsh=dDZ1cjN4Z3lkeGht&utm_source=qr"
+                className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center secondary-color hover:bg-primary/30 hover:accent-color transition-all duration-300 relative z-60 pointer-events-auto !cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Linkedin className="h-5 w-5" />
+                <Instagram className="h-5 w-5" />
               </a>
               <a
-                href={contactInfo.socialLinks.twitter}
-                className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center secondary-color hover:bg-primary/30 hover:accent-color transition-all duration-300"
+                href="https://www.facebook.com/share/18ZrzsXMY6/?mibextid=wwXIfr"
+                className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center secondary-color hover:bg-primary/30 hover:accent-color transition-all duration-300 relative z-60 pointer-events-auto !cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Twitter className="h-5 w-5" />
+                <Facebook className="h-5 w-5" />
               </a>
               <a
-                href={contactInfo.socialLinks.github}
-                className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center secondary-color hover:bg-primary/30 hover:accent-color transition-all duration-300"
+                href="https://www.tiktok.com/@codex.solutions?_t=ZS-8visP6Ryob2&_r=1"
+                className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center secondary-color hover:bg-primary/30 hover:accent-color transition-all duration-300 relative z-60 pointer-events-auto !cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Github className="h-5 w-5" />
+                <SiTiktok className="h-5 w-5" />
               </a>
               <a
-                href={contactInfo.socialLinks.dribbble}
-                className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center secondary-color hover:bg-primary/30 hover:accent-color transition-all duration-300"
+                href="https://api.whatsapp.com/send?phone=201288944409"
+                className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center secondary-color hover:bg-primary/30 hover:accent-color transition-all duration-300 relative z-60 pointer-events-auto !cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Dribbble className="h-5 w-5" />
+                <FaWhatsapp className="h-5 w-5" />
               </a>
             </motion.div>
           </motion.div>

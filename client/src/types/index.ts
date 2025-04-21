@@ -91,10 +91,10 @@ export interface ContactInfo {
   phone: string;
   address: string;
   socialLinks: {
-    linkedin: string;
-    twitter: string;
-    github: string;
-    dribbble: string;
+    instagram: "https://www.instagram.com/codexsolutions_?igsh=dDZ1cjN4Z3lkeGht&utm_source=qr";
+    facebook: "https://www.facebook.com/share/18ZrzsXMY6/?mibextid=wwXIfr";
+    tiktok: "https://www.tiktok.com/@codex.solutions?_t=ZS-8visP6Ryob2&_r=1";
+    whatsapp: "https://api.whatsapp.com/send?phone=201288944409";
   };
 }
 
