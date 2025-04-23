@@ -195,7 +195,7 @@ export const teamMembers: TeamMember[] = [
     name: "Mohamed Atef",
     position: "FullStack Developer",
     bio: "Michael believes great design is invisible. He obsesses over the details so our users don't have to, creating intuitive interfaces that make complex tasks feel simple and natural.",
-    image: "https://scontent.fcai20-1.fna.fbcdn.net/v/t39.30808-6/474587231_1359669362061961_2100668483350874104_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHmj9mpsCGSvF9SqVDCYD2DX6Iu4Z0EsBRfoi7hnQSwFDqlstqW6g0gKNY0wy6rP_Wyfnvw_ynRtGcUpVNlHsAP&_nc_ohc=u3w2rGSxZjYQ7kNvwFzjFWn&_nc_oc=AdmcNaGPyQe11uFgrbV1KaNgw6nluiAeZVuxVCqI-MuPcnVqTCKCChkntFxWuIOciEE&_nc_zt=23&_nc_ht=scontent.fcai20-1.fna&_nc_gid=eL6AKdmtkh4lHIkYC3fkow&oh=00_AfE6aQvH-rXt8TXWgHEcA-kqXO2wrulPJ-MNNeTWdUkW1g&oe=680CA857",
+    image: "https://i.ibb.co/gMNLhns0/Whats-App-Image-2025-04-22-at-23-06-31-1bca8414.jpg",
     socialLinks: {
       linkedin: "#",
       twitter: "#",
@@ -220,7 +220,7 @@ export const teamMembers: TeamMember[] = [
     name: "Mahmoud Amin",
     position: "Mobile App Developer",
     bio: "Emily is our code quality champion and technical mentor. With expertise in multiple frameworks and languages, she ensures our solutions are as robust and maintainable as they are innovative.",
-    image: "https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/473417317_122151840920342361_8294178731824840291_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEappkCwOFaAtlIzw5qVf6UC2IgL1hnlqcLYiAvWGeWp6Wiqs4jSE_wX1LxFT9oy_i2WFB2TpaulcDWh9ACzMST&_nc_ohc=I21Jwa-pKMYQ7kNvwEFQGMH&_nc_oc=Adnh7Gzj3y_6p6ljlsm6DuMGksVriOuel5Rpb6sVSDINMdYZJSNHM137kHS18ieN5lE&_nc_zt=23&_nc_ht=scontent.fcai20-3.fna&_nc_gid=zf_CLNv21lE_-Hdu3wCeaw&oh=00_AfHgj8t6AuPDYiriPft0jFWGObNDjsw7qsANcaQbMTMnbw&oe=680C8729",
+    image: "https://i.ibb.co/kVT5Q6jd/Whats-App-Image-2025-04-22-at-23-05-56-2183d559.jpg",
     socialLinks: {
       linkedin: "#",
       twitter: "#",

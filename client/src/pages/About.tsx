@@ -128,8 +128,8 @@ const About = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="text-l font-bold font-montserrat">{member.name}</h4>
-                    <p className="text-secondary-color text-sm">{member.position}</p>
+                    <h4 className="text-sm font-bold font-montserrat">{member.name}</h4>
+                    <p className="text-secondary-color text-xs">{member.position}</p>
                   </div>
 
                   <div
