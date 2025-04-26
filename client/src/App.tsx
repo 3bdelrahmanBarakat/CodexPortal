@@ -9,11 +9,13 @@ import CaseStudy from "@/pages/CaseStudy";
 import NotFound from "@/pages/not-found";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/ScrollToTop";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <ScrollToTop />
       <main className="flex-grow">
         <Switch>
           <Route path="/" component={Home} />
