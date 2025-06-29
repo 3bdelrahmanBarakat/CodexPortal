@@ -9,30 +9,7 @@ import { Helmet } from "react-helmet";
 // Extended projects for the portfolio page
 const portfolioProjects = [
   ...featuredProjects,
-  {
-    id: 4,
-    title: "TravelSync",
-    description: "An AI-powered travel planner that creates personalized itineraries based on preferences, budget, and travel history.",
-    image: "https://images.unsplash.com/photo-1476900543704-4312b78632f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480&q=80",
-    year: "2022",
-    techStack: ["React Native", "Python", "TensorFlow"],
-  },
-  {
-    id: 5,
-    title: "EduLearn Platform",
-    description: "A comprehensive e-learning platform with interactive courses, progress tracking, and personalized learning paths.",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480&q=80",
-    year: "2021",
-    techStack: ["Angular", "Node.js", "MongoDB"],
-  },
-  {
-    id: 6,
-    title: "SmartCity Dashboard",
-    description: "A centralized monitoring system for urban infrastructure featuring real-time data visualization and predictive maintenance.",
-    image: "https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=480&q=80",
-    year: "2021",
-    techStack: ["Vue.js", "Express", "D3.js"],
-  },
+  
 ];
 
 // Get unique tech categories from all projects
@@ -138,7 +115,7 @@ const Portfolio = () => {
                     <span className="text-xs text-gray-400">{project.year}</span>
                   </div>
                   <p className="text-sm text-gray-300 mb-4">{project.description}</p>
-                  <a href={`#project-${project.id}`} className="text-secondary-color hover:text-accent transition-colors duration-300 text-sm flex items-center">
+                  <a href={`/case-study/${project.slug}`} className="text-secondary-color hover:text-accent transition-colors duration-300 text-sm flex items-center">
                     <span>View Case Study</span>
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>

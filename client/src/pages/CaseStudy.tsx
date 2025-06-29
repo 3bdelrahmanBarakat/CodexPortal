@@ -125,7 +125,7 @@ const CaseStudy = () => {
             className="lg:col-span-1"
           >
             <div className="bg-dark-blue/50 backdrop-blur-sm p-6 rounded-lg border border-primary/20 sticky top-24">
-              <h3 className="text-xl font-bold mb-4 font-montserrat">Tech Stack</h3>
+              <h3 className="text-xl font-bold mb-4 font-montserrat">Next Project</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {caseStudy.techStack.map((tech, index) => (
                   <span
